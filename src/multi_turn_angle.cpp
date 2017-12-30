@@ -19,9 +19,9 @@ void sendCommand(float time_cmd, float angle_cmd);
 const char *portname = "/dev/ttyUSB1";
 
 // Sets the angle to go to in radians
-const float kAngle = 2.0f*M_PI;
+const float kAngle = 80*2.0f*M_PI;
 // Sets the trajectory time in seconds
-const float kTime = 1;
+const float kTime = 1.5;
 
 int msg_count = 0;
 int fd = -1; // fd for serial port
@@ -71,6 +71,7 @@ int main()
     }
     spin_direction = -1*spin_direction;
     usleep((useconds_t) kTime*1000*1000);
+    usleep((useconds_t) 1*1000*1000);
   }
   fcntl(0, F_SETFL, tem);
   printf("cnt=%d\n", cnt);

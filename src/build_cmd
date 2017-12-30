@@ -1,3 +1,6 @@
 g++ -std=gnu++0x -I ../inc/ multi_turn_angle.cpp generic_interface.cpp byte_queue.c crc_helper.c packet_finder.c -o mta
 g++ -std=gnu++0x -I ../inc/ read_angle.cpp generic_interface.cpp byte_queue.c crc_helper.c packet_finder.c -o ra
 g++ -std=gnu++0x -I ../inc/ copy_angle.cpp generic_interface.cpp byte_queue.c crc_helper.c packet_finder.c -o ca
+g++ -std=gnu++0x -I ../inc/ record_angle.cpp generic_interface.cpp byte_queue.c crc_helper.c packet_finder.c -o fun
+g++ -std=gnu++0x -I ../inc/ record_angle2.cpp generic_interface.cpp byte_queue.c crc_helper.c packet_finder.c -o fun2
+
